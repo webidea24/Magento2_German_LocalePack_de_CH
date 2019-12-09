@@ -1,8 +1,8 @@
 <?php
 
-$de_csv = fopen('de_DE.csv', 'r');
+$de_csv = fopen('de_CH.csv', 'r');
 $phrases_csv = fopen('phrases.csv', 'r');
-$de_new_csv = fopen('de_DE_new.csv', 'w');
+$de_new_csv = fopen('de_CH_new.csv', 'w');
 
 $old = array();
 

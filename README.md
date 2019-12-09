@@ -1,19 +1,16 @@
-# Magento 2 German LocalePack de_DE
+# Magento 2 German LocalePack de_CH
 
-Deutsches Sprachpaket für Magento 2 Community Edition (Version 2.3.2)
+Deutsches (Schweiz) Sprachpaket für Magento 2 Community Edition (Version 2.3.2)
 
 Die Übersetzung wurde von deutschen Muttersprachlern nach eigenem Ermessen vorgenommen. Die Übersetzung ist komplett, d.h. alle Sprachausgaben von Magento 2 wurden vom Englischen ins Deutsche übersetzt. Gern können Änderungsvorschläge eingebracht oder auch das gesamte Repository geforkt werden, wenn abweichende Übersetzungen eingebracht werden sollen.
 
-Es gibt hier https://crowdin.com/project/magento-2/de auch einen Ansatz für die deutsche Übersetzung, aber das ist noch nicht weit fortgeschritten. 
-Und für Magento 1.x gibt es weiterhin das deutsche Sprachpaket von Rico Neitzel: https://github.com/riconeitzel/German_LocalePack_de_DE
-
 # Installation
- - Alle Dateien nach `/app/i18n/splendid/de_DE/` kopieren
+ - Alle Dateien nach `/app/i18n/webidea/de_CH/` kopieren
 
 Aus dem Magento-Root-Verzeichnis folgende Befehle aufrufen:
 ```bash
-rm pub/static/frontend/Magento/luma/de_DE/js-translation.json
-php bin/magento setup:static-content:deploy -f de_DE
+rm pub/static/frontend/Magento/luma/de_CH/js-translation.json
+php bin/magento setup:static-content:deploy -f de_CH
 php bin/magento setup:upgrade
 rm -rf var/di
 php bin/magento setup:di:compile
@@ -21,9 +18,9 @@ php bin/magento setup:di:compile
 
 # Installation mit Composer
 ```bash
-composer require splendidinternet/mage2-locale-de-de
-rm pub/static/frontend/Magento/luma/de_DE/js-translation.json
-php bin/magento setup:static-content:deploy de_DE
+composer require webidea/mage2-locale-de-ch
+rm pub/static/frontend/Magento/luma/de_CH/js-translation.json
+php bin/magento setup:static-content:deploy de_CH
 ```
 
 # Add new phrases
@@ -46,8 +43,8 @@ Copy the `phrases.csv` into this repository and run:
 php check_new.php
 ```
 
-This will output a new file `de_DE_new.csv` which only contains the
-phrases that are not yet translated in `de_DE.csv`.
+This will output a new file `de_CH_new.csv` which only contains the
+phrases that are not yet translated in `de_CH.csv`.
 
 ### Translate phrases
 
@@ -56,7 +53,7 @@ in the *second* column.
 
 ### Copy new phrases and create a pull request
 
-Copy the new phrases to `de_DE.csv`.
+Copy the new phrases to `de_CH.csv`.
 
 **IMPORTANT**: sort the file alphabetically based on the first column, e.g. with LibreOffice.
 
